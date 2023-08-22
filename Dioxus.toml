@@ -15,12 +15,12 @@ out_dir = "dist"
 
 # resource (public) file folder
 asset_dir = "public"
-base_path = "frontend-rust-dioxus-test-app"
+base_path = "rust-fullstack"
 
 
 [web.app]
 # base_path = "frontend-rust-dioxus-test-app"
-base_path = "frontend-rust-dioxus-test-app"
+base_path = "rust-fullstack"
 
 # HTML title tag content
 title = "dioxus | ⛺"

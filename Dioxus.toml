@@ -14,7 +14,7 @@ default_platform = "web"
 out_dir = "doc"
 
 # resource (public) file folder
-asset_dir = "public"
+asset_dir = "assets"
 base_path = "rust-fullstack"
 
 

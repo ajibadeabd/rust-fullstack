@@ -2,14 +2,21 @@
 
 use rust_fullstack::app;
 use dioxus::prelude::*;
-use dioxus_fullstack::prelude::*;
 
+// fn main() {
+//     LaunchBuilder::new(app).launch();
+// }
 
 
 
 fn main() {
-    LaunchBuilder::new(app).launch();
+    // launch the web app
+    dioxus_web::launch(app);
 }
+
+ 
+
+
 
 // fn app(cx: Scope) -> Element {
 //     let mut count = use_state(cx, || 0);

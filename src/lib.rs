@@ -14,6 +14,7 @@ use pages::{
 };
  
 #[derive(Routable, PartialEq, Debug, Clone)]
+#[rustfmt::skip]
 enum Route {
     #[route("/")]
     HomePage{},
@@ -23,8 +24,8 @@ enum Route {
     DashboardPage{},
     #[route("/profile")]
     ProfilePage{},
-    #[route("/:..segments")]
-	NotFound { segments: Vec<String> }
+    #[route("/:..route")]
+	NotFound { route: Vec<String> }
 }
 
 

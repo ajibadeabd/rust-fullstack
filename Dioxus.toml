@@ -1,26 +1,19 @@
-
-
 [application]
 
 # App (Project) Name
 name = "rust-fullstack"
-
 
 # Dioxus App Default Platform
 # desktop, web, mobile, ssr
 default_platform = "web"
 
 # `build` & `serve` dist path
-out_dir = "doc"
+out_dir = "docs"
 
 # resource (public) file folder
 asset_dir = "public"
-base_path = "rust-fullstack"
-
 
 [web.app]
-# base_path = "frontend-rust-dioxus-test-app"
-base_path = "rust-fullstack"
 
 # HTML title tag content
 title = "dioxus | ⛺"
@@ -32,6 +25,9 @@ reload_html = true
 
 # which files or dirs will be watcher monitoring
 watch_path = ["src", "public"]
+
+# uncomment line below if using Router
+# index_on_404 = true
 
 # include `assets` in web platform
 [web.resource]
@@ -51,4 +47,3 @@ style = []
 
 # Javascript code file
 script = []
-

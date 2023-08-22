@@ -13,13 +13,13 @@ out_dir = "docs"
 # resource (public) file folder
 asset_dir = "public"
 
-base_path = "rust-fullstack"
+# base_path = "."
 
 [web.app]
 
 # HTML title tag content
 title = "dioxus | ⛺"
-base_path = "rust-fullstack"
+# base_path = "."
 
 [web.watcher]
 
@@ -30,7 +30,7 @@ reload_html = true
 watch_path = ["src", "public"]
 
 # uncomment line below if using Router
-# index_on_404 = true
+index_on_404 = true
 
 # include `assets` in web platform
 [web.resource]

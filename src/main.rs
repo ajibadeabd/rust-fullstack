@@ -4,6 +4,9 @@ use rust_fullstack::app;
 use dioxus::prelude::*;
 use dioxus_fullstack::prelude::*;
 
+
+
+
 fn main() {
     LaunchBuilder::new(app).launch();
 }

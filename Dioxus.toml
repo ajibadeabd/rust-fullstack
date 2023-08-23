@@ -8,7 +8,7 @@ name = "rust-fullstack"
 default_platform = "web"
 
 # `build` & `serve` dist path
-out_dir = "docs"
+out_dir = "build"
 
 # resource (public) file folder
 asset_dir = "public"
@@ -24,7 +24,7 @@ title = "dioxus | ⛺"
 [web.watcher]
 
 # when watcher trigger, regenerate the `index.html`
-reload_html = true
+reload_html = false
 
 # which files or dirs will be watcher monitoring
 watch_path = ["src", "public"]
@@ -47,6 +47,8 @@ script = []
 
 # CSS style file
 style = []
+# style = ["tailwind.css"]
+
 
 # Javascript code file
 script = []

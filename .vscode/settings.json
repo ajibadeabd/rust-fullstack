@@ -1,0 +1,26 @@
+{
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/node_modules/": true,
+    "**/coverage/": true,
+    "**/npm-debug.log": true,
+    "**/dist": true,
+    "**/data": true,
+    "**/.env": false
+  },
+
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.format": true
+  },
+  "tailwindCSS.experimental.classRegex": ["class: \"(.*)\""],
+  "tailwindCSS.includeLanguages": {
+    "rust": "html"
+  },
+
+  "cSpell.words": ["nestjs", "Tokenised"]
+}

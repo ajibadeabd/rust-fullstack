@@ -8,7 +8,7 @@ name = "rust-fullstack"
 default_platform = "web"
 
 # `build` & `serve` dist path
-out_dir = "build"
+out_dir = "./dist"
 
 # resource (public) file folder
 asset_dir = "public"

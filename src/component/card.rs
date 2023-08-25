@@ -22,12 +22,15 @@ struct AccountType{
     render!(
         div {
 
-            class:"w-[45%] lg:w-[30%] mt-4",
-            // for  (_i , account) in accounts.iter().enumerate() {
+            class:"mt-4 w-full md:w-[47%] min-h-[50vh] lg:w-[47%] ",
                 div {
-                    class:  "w-[25%] bg-indigo-500 flex md:flex-1 flex-col gap-[33px] items-center justify-end pt-6 rounded-[25px] w-[48%] md:w-full",
+                    class:  "min-h-[30vh] bg-indigo-500 flex md:flex-1 flex-col  items-center justify-end pt-6 rounded-[25px]",
                     div {
-                        class: "flex flex-col gap-[29px] items-start justify-start w-[87%] md:w-full",
+                        class: "flex p-2 flex-col gap-[29px] items-start justify-start w-[87%] md:w-full",
+                        h1 {
+                            class:"text-white text-4xl",
+                            "Kord virtual card"
+                        }
                         div {
                             class: "flex flex-row items-start justify-between md:px-5 w-full",
                             div {

@@ -7,11 +7,10 @@ use crate::Route;
 pub fn Sidebar(cx: Scope) -> Element {
      // Define route data as tuples (route, label)
                 let routes = vec![
-                    (Route::DashboardPage {}, "DashboardPage"),
                     (Route::ProfilePage {}, "Profile"),
                     (Route::DashboardPage {}, "Dashboard"),
-                    (Route::HomePage {}, "Home"),
-                    // Add more routes here
+                    (Route::DepositPage {}, "Transactions"),
+                    (Route::HomePage {}, "Log Out"),
                 ];
 
     render!(rsx!(
@@ -42,4 +41,4 @@ pub fn Sidebar(cx: Scope) -> Element {
             }
         }
     ))
-}
+} 

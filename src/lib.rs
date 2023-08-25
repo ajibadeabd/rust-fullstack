@@ -10,7 +10,8 @@ use pages::{
     login::LoginPage,
     not_found::NotFound,
     dash_board::DashboardPage,
-    profile::ProfilePage
+    profile::ProfilePage,
+    transaction::DepositPage
 };
  
 #[derive(Routable, PartialEq, Debug, Clone)]
@@ -24,6 +25,8 @@ enum Route {
     DashboardPage{},
     #[route("/profile")]
     ProfilePage{},
+    #[route("/transactions")]
+    DepositPage{},
     #[route("/:..route")]
 	NotFound { route: Vec<String> }
 }

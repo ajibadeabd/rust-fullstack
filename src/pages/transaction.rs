@@ -1,33 +1,37 @@
 use dioxus::prelude::*;
 
-use crate::component::{side_bar::Sidebar, nav_bar::Navbar};
+use crate::{component::{side_bar::Sidebar, nav_bar::Navbar}, context::SideBarOpen};
 
 #[inline_props]
 pub fn DepositPage(cx: Scope) -> Element {
-
-    // // Define breadcrumb items based on current view
-    // let breadcrumb_items = if "current_view" != "form" {
-    //     vec![("Transaction", "/"), ("Deposit", "#")]
-    // } else {
-    //     vec![("Transaction", "/"), ("Transfer ", "#")]
-    // };
+    let is_side_nav_open = use_shared_state::<SideBarOpen>(cx).unwrap();
+    
+    let current_theme = *is_side_nav_open.read();
+    let test = match current_theme{
+        SideBarOpen::True=>"true",
+        SideBarOpen::False=>"false"
+    }; 
     let actions = vec!["Deposit".to_owned(), "Transfer".to_owned(),"Withdraw".to_owned()];
     let first_action = use_state(cx, || 0 as i32);
-let mut count = use_state(cx, || 0);
 
     cx.render(rsx!(
         div { class: "min-h-screen bg-gradient-to-r from-blue-400 to-purple-500",
             // Navigation Bar
+            
             Navbar {}
             Sidebar {}
 
             div { class: "flex justify-end",
+            
                 div {
                     class: "flex flex-col  justify-start p-6 py-20 w-full lg:w-[75%]",
                     // Deposit Section
 
 div { class: "p-4 bg-gray-200 text-gray-600",
                 div { class: "container  ",
+                div{
+                "{test}"
+            }
                   
                      div {
         class: "flex space-x-4",

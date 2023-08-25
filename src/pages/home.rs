@@ -21,6 +21,15 @@ pub fn HomePage(cx: Scope) -> Element {
             div { class: "flex flex-col justify-center items-center p-36 mt-32",
                 h1 { class: "text-4xl font-semibold mb-4 text-center text-white", "Welcome to PayNow" },
                 p { class: "text-lg text-center text-white", "Empowering Secure and Convenient Payments" }
+
+                button {
+                         class: "px-6 py-3 mt-6 bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:bg-blue-700", 
+                         
+                             onclick: move |event| {
+                                        nav.push(Route::LoginPage {});
+                        },
+                        "Sign Up Now"
+                 }
             }
             div { class: "bg-gray-100 py-16",
                 div { class: "container mx-auto p-8",

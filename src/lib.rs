@@ -3,8 +3,12 @@ use dioxus::prelude::*;
 
 mod pages;
 mod component;
+mod context;
 
 
+use context::{
+    context
+};
 use pages::{
     home::HomePage,
     login::LoginPage,
@@ -32,9 +36,16 @@ enum Route {
 }
 
 
+
+// Provider
+fn Parent<'a>(cx: Scope<'a>) -> Element<'a> {
+    //initialize shared data
+    context(cx);
+    render! {
+        Router::<Route> { }
+    }
+}
+
 pub fn app(cx: Scope) -> Element {
-        render! {
-            Router::<Route> { }
-        }
-    
+    return Parent(cx);
 }

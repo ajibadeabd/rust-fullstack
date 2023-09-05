@@ -18,7 +18,7 @@ pub fn HomePage(cx: Scope) -> Element {
                     a { class: "text-gray-800 hover:underline", href: "/contact", "Contact Us" },
                 }
             }
-            div { class: "flex flex-col justify-center items-center p-36         mt-32",
+            div { class: "flex flex-col justify-center items-center py-10   sm:py-20 mt-32",
                 h1 { class: "text-4xl font-semibold mb-4 text-center text-white", "Welcome to PayNow" },
                 p { class: "text-lg text-center text-white", "Empowering Secure and Convenient Payments" }
 
